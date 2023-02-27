@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--  
+          /*Attention Doublon dans le fichier CSS */
+          !!Doublon : le selecteur "h2", est utilisé sur "la ligne 28" et "74"*/
+          !!Famille de polices génériques manquante (manque, sans-serif;) ligne 100" et "153"
+    -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,12 +18,15 @@
     <title>Riding Cities</title>
   </head>
   <body>
-    <!-- Info : La barre oblique(de fin) [ / ] sur les balises orphelines, 
-      [n'ont aucun effet] et [interagissent mal] 
-      avec les valeurs d'attributs sans guillemets 
+    <!-- 
+          Info : La barre oblique(de fin) [ / ] sur les balises orphelines, 
+          [n'ont aucun effet] et [interagissent mal] 
+          avec les valeurs d'attributs sans guillemets 
     -->
+
     <div class="container">
-      <!--en-tête!                                                  
+      <!--
+          en-tête!                                                  
       -->
 
       <header>
@@ -29,7 +37,8 @@
       </header>
 
       <main>
-        <!--Section n°1 La Mission de l'Assos                        
+        <!--
+          Section n°1 La Mission de l'Assos                        
         -->
 
         <section>
@@ -69,19 +78,21 @@
           </div>
         </section>
 
-        <!--Section n°2 Les Membres Fondateurs         
-          =!! les "titres (h3) ne correspondent pas à ceux de la maquette"...
-        !! Dans le CSS=>
-        !! Il faut créer une class ex:(.nameFoundersMembers h3{})
-        !! Exemple :
-        !! .nameFoundersMembers h3 {
-        !! 	font-weight:600; 
-        !! 	font-size:20px; 
-        !! 	line-height:22px;   
-        !! }
-        !! Et dans le HTML=>
-        !! l'ajouter à la deuxième <div class="directionRow whiteContentSection"> 
-        !! celle qui englobe (les) <article> de la section=> membres fondateurs.
+        <!--
+          Section n°2 Les Membres Fondateurs         
+          !! les "titres (h3) ne correspondent pas à ceux de la maquette"...
+          Dans le CSS=>
+          Il faut créer une class ex:(.nameFoundersMembers h3{})
+          Exemple :
+
+          .nameFoundersMembers h3 {
+             	font-weight:600; 
+             	font-size:20px; 
+             	line-height:22px;   
+          }
+          Dans le HTML=>
+          Ajouter la class "nameFoundersMembers" à la <div class="directionRow whiteContentSection"> 
+          (la seconde, celle qui englobe (les) <article> de la section=> membres fondateurs).
         -->
 
         <section class="sectionLinearGradientBackground">
@@ -125,7 +136,8 @@
           </div>
         </section>
 
-        <!--Section Boutons                                          
+        <!--
+          Section Boutons                                          
         -->
 
         <section>
@@ -146,7 +158,9 @@
           </div>
         </section>
       </main>
-      <!--Footer ? Suggestion-> plans de site, contact, Map, itinéraire, ré@lisation, autre liens...
+      <!--
+          ? Créer un footer  
+          ? Suggestion : plans de site, contact, Map, itinéraire, ré@lisation Webonzaï, ect...
       -->
     </div>
   </body>
